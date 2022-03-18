@@ -24,3 +24,14 @@ $(document).ready(function(){
         $(this).hide();
     })
 })
+
+
+
+
+
+
+
+let buttonEl=document.getElementById("buttonEl");
+let crustEl=document.getElementById("crusts")
+let sizeEl=document.getElementById("size");
+let toppingsEl=document.getElementById("toppings");
