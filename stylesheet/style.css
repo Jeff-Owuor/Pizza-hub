@@ -11,7 +11,7 @@ h3{
     text-align: center;
 }
 .containing{
-    height:80vh;
+    height:60vh;
     margin-top: 10vh;
     margin-bottom: 5vh;
     margin-left:15vw;
@@ -28,4 +28,14 @@ h1{
 }
 .milkyWay,.outstanding,.galaxy{
     display:none;
+}
+.tabular{
+    margin:6vh 2vw;
+    display:none;
+}
+.tabular tr th{
+    padding:0 2vw;
+}
+.tabular tr td{
+    padding:0 2vw;
 }
