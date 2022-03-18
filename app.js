@@ -15,4 +15,12 @@ $(document).ready(function(){
         $(".imageContainer").show();
         $(this).hide();
     })
+    $(".imageContainer2").click(function(){
+        $(".outstanding").show();
+        $(this).hide();
+    })
+    $(".outstanding").click(function(){
+        $(".imageContainer2").show();
+        $(this).hide();
+    })
 })
