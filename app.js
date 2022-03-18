@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".another").click(function(){
+        $(".galaxy").show();
+        $(this).hide();
+    })
+    $(".galaxy").click(function(){
+        $(".another").show();
+        $(this).hide();
+    })
+})
