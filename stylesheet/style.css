@@ -26,3 +26,6 @@ h1{
 .dropdown{
     margin:0 40%;
 }
+.milkyWay,.outstanding,.galaxy{
+    display:none;
+}
