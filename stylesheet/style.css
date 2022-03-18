@@ -2,7 +2,27 @@
     border-radius:50%;
     height: 25vh;
     width:20vw;
+    margin:0 2vw;
 }
 .container{
     display:flex;
+}
+h3{
+    text-align: center;
+}
+.containing{
+    height:80vh;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    margin-left:15vw;
+    margin-right:15vw;
+}
+.paragraph{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.dropdown{
+    margin:0 40%;
 }
