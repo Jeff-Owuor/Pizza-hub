@@ -1,0 +1,8 @@
+.image{
+    border-radius:50%;
+    height: 25vh;
+    width:20vw;
+}
+.container{
+    display:flex;
+}
