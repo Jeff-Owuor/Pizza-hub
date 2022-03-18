@@ -7,4 +7,12 @@ $(document).ready(function(){
         $(".another").show();
         $(this).hide();
     })
+    $(".imageContainer").click(function(){
+        $(".milkyWay").show();
+        $(this).hide();
+    })
+    $(".milkyWay").click(function(){
+        $(".imageContainer").show();
+        $(this).hide();
+    })
 })
