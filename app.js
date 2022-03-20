@@ -47,6 +47,10 @@ let anotherOne=document.querySelector(".freelance")
 let kasuku=document.querySelector(".yeah")
 let club=document.querySelector(".comeon")
 let photograph=document.querySelector(".completion");
+let bazu=document.querySelector(".endgame");
+let meja=document.getElementById("priest");
+let damn=document.querySelector(".inputbox");
+let visualstudio=document.querySelector(".no")
 let count=1;
 let prep;
 const sizes={
@@ -541,7 +545,15 @@ anotherButtonElement.addEventListener("click",function(){
 })
 kasuku.addEventListener("click",function(){
    club.remove();
-   photograph.classList.add("complete")
+   photograph.classList.add("complete");
+})
+bazu.addEventListener("click",function(){
+    let finale=damn.value;
+    meja.innerText=`Your order has been received!We are dispatching our rider to ${finale}`;
+    photograph.remove()
+})
+visualstudio.addEventListener("click",function(){
+    meja.innerText="Your order will be ready in the next ten minutes. Happy feasting"
 })
 function checkout(){
     let equalizer=arr.reduce((a,b)=> a+b);
