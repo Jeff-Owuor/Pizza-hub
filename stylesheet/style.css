@@ -52,7 +52,6 @@ h1{
 }
 .jumbo{
     width:40vw;
-    height:20vh;
 }
 .thirdButton{
     display:none;
@@ -60,4 +59,24 @@ h1{
 .thirdbutton{
     display:block;
     margin-left:50vw;
+}
+.paragraphContainer{
+    display:none;
+}
+.paragrapher{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.completion{
+    display:none;
+}
+.complete{
+    display:flex;
+    justify-content: center;
+}
+.comeon{
+    display: block;
 }

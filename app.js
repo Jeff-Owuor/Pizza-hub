@@ -42,6 +42,11 @@ let tableEl2=document.getElementById("spanning")
 let tableEl3=document.getElementById("spanner");
 let tableEl4=document.getElementById("span")
 let tableEl5=document.getElementById("another")
+let paragraphing=document.querySelector(".paragraphContainer")
+let anotherOne=document.querySelector(".freelance")
+let kasuku=document.querySelector(".yeah")
+let club=document.querySelector(".comeon")
+let photograph=document.querySelector(".completion");
 let count=1;
 let prep;
 const sizes={
@@ -60,9 +65,8 @@ const crusts={
     "crispy":400
 }
 buttonEl.addEventListener("click",function(x){
-     x.preventDefault()
-      generateOutput()
-      console.log(arr);
+     x.preventDefault();
+      generateOutput();
        buttonElement.classList.add("secondButton");
        anotherButtonElement.classList.add("thirdbutton")
 })
@@ -532,6 +536,15 @@ prep=container.classList.add("tabulate");
 return arr.push(total);
 }
 anotherButtonElement.addEventListener("click",function(){
-    
+    checkout();
+    paragraphing.classList.add("paragrapher")
 })
-function checkout(){}
+kasuku.addEventListener("click",function(){
+   club.remove();
+   photograph.classList.add("complete")
+})
+function checkout(){
+    let equalizer=arr.reduce((a,b)=> a+b);
+    console.log(equalizer);
+     anotherOne.innerText=equalizer;
+}
