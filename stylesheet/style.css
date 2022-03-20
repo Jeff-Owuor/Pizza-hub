@@ -43,3 +43,10 @@ h1{
     margin:6vh 2vw;
     display:block;
 }
+.secondbutton{
+    display: none;
+}
+.secondButton{
+    margin:3vh 40vw;
+    display: inline-block;
+}
