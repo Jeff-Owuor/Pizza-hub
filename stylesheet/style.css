@@ -47,6 +47,17 @@ h1{
     display: none;
 }
 .secondButton{
-    margin:3vh 40vw;
-    display: inline-block;
+    display:block;
+    margin-left:20vw;
+}
+.jumbo{
+    width:40vw;
+    height:20vh;
+}
+.thirdButton{
+    display:none;
+}
+.thirdbutton{
+    display:block;
+    margin-left:50vw;
 }
