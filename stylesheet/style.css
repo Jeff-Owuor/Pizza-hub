@@ -30,7 +30,7 @@ h1{
     display:none;
 }
 .tabular{
-    margin:6vh 2vw;
+    
     display:none;
 }
 .tabular tr th{
@@ -38,4 +38,8 @@ h1{
 }
 .tabular tr td{
     padding:0 2vw;
+}
+.tabulate{
+    margin:6vh 2vw;
+    display:block;
 }

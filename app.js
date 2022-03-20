@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 
 
-
+let container=document.querySelector(".tabular")
 let buttonEl=document.getElementById("buttonEl")
 let crustEl=document.getElementById("crusts").value;
 let sizeEl=document.getElementById("sizes").value;
@@ -40,22 +40,24 @@ let tableEl3=document.getElementById("spanner");
 let tableEl4=document.getElementById("span")
 let tableEl5=document.getElementById("another")
 const sizes={
-    "large":"ksh800",
-    "medium":"ksh700",
-    "small":"ksh 600"
+    "large":800,
+    "medium":700,
+    "small":600
 }
 const toppings={
-   "mushroom":"ksh250",
-    "bacon":"ksh200",
-    "ham":"ksh300"
+   "mushroom":250,
+    "bacon":200,
+    "ham":300
 }
 const crusts={
-    "stuffed":"ksh200",
-    "glutenfree":"ksh350",
-    "crispy":"ksh400"
+    "stuffed":200,
+    "glutenfree":350,
+    "crispy":400
 }
 buttonEl.addEventListener("click",function(){
-    
+     
+      generateOutput()
+      container.classList.toggle("tabulate")
 })
 function generateOutput(){
     if(crustEl=="stuffed"&&sizeEl=="small"&&toppingsEl=="mushroom"){
@@ -63,162 +65,162 @@ function generateOutput(){
           tableEl2.innerText=`${sizeEl}-${sizes.small}`;
           tableEl3.innerText=`${toppingsEl}-${toppings.mushroom}`
           tableEl4.innerText=`${crustEl}-${crusts.stuffed}`
-          tableEl5.innerText="ksh1050"
+          tableEl5.innerText=crusts.stuffed+toppings.mushroom+sizes.small;
     }else if(crustEl=="stuffed"&&sizeEl=="medium"&&toppingsEl=="mushroom"){
         tableEl.innerText=1;
         tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
         tableEl3.innerText=`${toppingsEl}-${toppings.mushroom}`
         tableEl4.innerText=`${crustEl}-${crusts.stuffed}`
-        tableEl5.innerText="ksh1150"
+        tableEl5.innerText=crusts.stuffed+toppings.mushroom+sizes.medium;
     }else if(crustEl=="stuffed"&&sizeEl=="large"&&toppingsEl=="mushroom"){
         tableEl.innerText=1;
         tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
         tableEl3.innerText=`${toppingsEl}-${toppings.mushroom}`
         tableEl4.innerText=`${crustEl}-${crusts.stuffed}`
-        tableEl5.innerText="ksh1250" 
+        tableEl5.innerText=crusts.stuffed+toppings.mushroom+sizes.large; 
     }else if(crustEl=="crispy"&&sizeEl=="small"&&toppingsEl=="mushroom"){
         tableEl.innerText=1;
         tableEl2.innerText=`${sizeEl}-${sizes.small}`;
         tableEl3.innerText=`${toppingsEl}-${toppings.mushroom}`
         tableEl4.innerText=`${crustEl}-${crusts.crispy}`
-        tableEl5.innerText="ksh1250"
+        tableEl5.innerText=crusts.crispy+toppings.mushroom+sizes.small;
   }else if(crustEl=="crispy"&&sizeEl=="medium"&&toppingsEl=="mushroom"){
     tableEl.innerText=1;
     tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
     tableEl3.innerText=`${toppingsEl}-${toppings.mushroom}`
     tableEl4.innerText=`${crustEl}-${crusts.crispy}`
-    tableEl5.innerText="ksh1350"
+    tableEl5.innerText=crusts.crispy+toppings.mushroom+sizes.medium;
 }else if(crustEl=="crispy"&&sizeEl=="large"&&toppingsEl=="mushroom"){
     tableEl.innerText=1;
     tableEl2.innerText=`${sizeEl}-${sizes.large}`;
     tableEl3.innerText=`${toppingsEl}-${toppings.mushroom}`
     tableEl4.innerText=`${crustEl}-${crusts.crispy}`
-    tableEl5.innerText="ksh1450"
+    tableEl5.innerText=crusts.crispy+toppings.mushroom+sizes.large;
 }else if(crustEl=="glutenFree"&&sizeEl=="small"&&toppingsEl=="mushroom"){
     tableEl.innerText=1;
     tableEl2.innerText=`${sizeEl}-${sizes.small}`;
     tableEl3.innerText=`${toppingsEl}-${toppings.mushroom}`
     tableEl4.innerText=`${crustEl}-${crusts.glutenfree}`
-    tableEl5.innerText="ksh1200"
+    tableEl5.innerText=crusts.glutenfree+toppings.mushroom+sizes.small;
 }else if(crustEl=="glutenFree"&&sizeEl=="medium"&&toppingsEl=="mushroom"){
     tableEl.innerText=1;
     tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
     tableEl3.innerText=`${toppingsEl}-${toppings.mushroom}`
     tableEl4.innerText=`${crustEl}-${crusts.glutenfree}`
-    tableEl5.innerText="ksh1300"
+    tableEl5.innerText=crusts.glutenfree+toppings.mushroom+sizes.medium;
 }else if(crustEl=="glutenFree"&&sizeEl=="large"&&toppingsEl=="mushroom"){
     tableEl.innerText=1;
     tableEl2.innerText=`${sizeEl}-${sizes.large}`;
     tableEl3.innerText=`${toppingsEl}-${toppings.mushroom}`
     tableEl4.innerText=`${crustEl}-${crusts.glutenfree}`
-    tableEl5.innerText="ksh1300"
+    tableEl5.innerText=crusts.glutenfree+toppings.mushroom+sizes.large;
 }else if(crustEl=="stuffed"&&sizeEl=="small"&&toppingsEl=="bacon"){
     tableEl.innerText=1;
     tableEl2.innerText=`${sizeEl}-${sizes.small}`;
     tableEl3.innerText=`${toppingsEl}-${toppings.bacon}`
     tableEl4.innerText=`${crustEl}-${crusts.stuffed}`
-    tableEl5.innerText="ksh1000"
+    tableEl5.innerText=crusts.stuffed+toppings.bacon+sizes.small;
 }else if(crustEl=="stuffed"&&sizeEl=="medium"&&toppingsEl=="bacon"){
   tableEl.innerText=1;
   tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
   tableEl3.innerText=`${toppingsEl}-${toppings.bacon}`
   tableEl4.innerText=`${crustEl}-${crusts.stuffed}`
-  tableEl5.innerText="ksh1200"
+  tableEl5.innerText=crusts.stuffed+toppings.bacon+sizes.medium;
 }else if(crustEl=="stuffed"&&sizeEl=="large"&&toppingsEl=="bacon"){
   tableEl.innerText=1;
   tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
   tableEl3.innerText=`${toppingsEl}-${toppings.bacon}`
   tableEl4.innerText=`${crustEl}-${crusts.stuffed}`
-  tableEl5.innerText="ksh1300" 
+  tableEl5.innerText=crusts.stuffed+toppings.bacon+sizes.large;
 }else if(crustEl=="crispy"&&sizeEl=="small"&&toppingsEl=="bacon"){
   tableEl.innerText=1;
   tableEl2.innerText=`${sizeEl}-${sizes.small}`;
   tableEl3.innerText=`${toppingsEl}-${toppings.bacon}`
   tableEl4.innerText=`${crustEl}-${crusts.crispy}`
-  tableEl5.innerText="ksh1200"
+  tableEl5.innerText=crusts.crispy+toppings.bacon+sizes.small;
 }else if(crustEl=="crispy"&&sizeEl=="medium"&&toppingsEl=="bacon"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.bacon}`
 tableEl4.innerText=`${crustEl}-${crusts.crispy}`
-tableEl5.innerText="ksh1300"
+tableEl5.innerText=crusts.crispy+toppings.bacon+sizes.medium;
 }else if(crustEl=="crispy"&&sizeEl=="large"&&toppingsEl=="bacon"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.large}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.bacon}`
 tableEl4.innerText=`${crustEl}-${crusts.crispy}`
-tableEl5.innerText="ksh1400"
+tableEl5.innerText=crusts.crispy+toppings.bacon+sizes.large;
 }else if(crustEl=="glutenFree"&&sizeEl=="small"&&toppingsEl=="bacon"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.small}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.bacon}`
 tableEl4.innerText=`${crustEl}-${crusts.glutenfree}`
-tableEl5.innerText="ksh1150"
+tableEl5.innerText=crusts.glutenfree+toppings.bacon+sizes.small;
 }else if(crustEl=="glutenFree"&&sizeEl=="medium"&&toppingsEl=="bacon"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.bacon}`
 tableEl4.innerText=`${crustEl}-${crusts.glutenfree}`
-tableEl5.innerText="ksh1250"
+tableEl5.innerText=crusts.glutenfree+toppings.bacon+sizes.medium;
 }else if(crustEl=="glutenFree"&&sizeEl=="large"&&toppingsEl=="bacon"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.large}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.bacon}`
 tableEl4.innerText=`${crustEl}-${crusts.glutenfree}`
-tableEl5.innerText="ksh1350"
+tableEl5.innerText=crusts.glutenfree+toppings.bacon+sizes.large;
 }else if(crustEl=="stuffed"&&sizeEl=="small"&&toppingsEl=="ham"){
     tableEl.innerText=1;
     tableEl2.innerText=`${sizeEl}-${sizes.small}`;
     tableEl3.innerText=`${toppingsEl}-${toppings.ham}`
     tableEl4.innerText=`${crustEl}-${crusts.stuffed}`
-    tableEl5.innerText="ksh1100"
+    tableEl5.innerText=crusts.stuffed+toppings.ham+sizes.small;
 }else if(crustEl=="stuffed"&&sizeEl=="medium"&&toppingsEl=="ham"){
   tableEl.innerText=1;
   tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
   tableEl3.innerText=`${toppingsEl}-${toppings.ham}`
   tableEl4.innerText=`${crustEl}-${crusts.stuffed}`
-  tableEl5.innerText="ksh1200"
+  tableEl5.innerText=crusts.stuffed+toppings.ham+sizes.medium;
 }else if(crustEl=="stuffed"&&sizeEl=="large"&&toppingsEl=="ham"){
   tableEl.innerText=1;
   tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
   tableEl3.innerText=`${toppingsEl}-${toppings.ham}`
   tableEl4.innerText=`${crustEl}-${crusts.stuffed}`
-  tableEl5.innerText="ksh1300" 
+  tableEl5.innerText=crusts.stuffed+toppings.ham+sizes.large;
 }else if(crustEl=="crispy"&&sizeEl=="small"&&toppingsEl=="ham"){
   tableEl.innerText=1;
   tableEl2.innerText=`${sizeEl}-${sizes.small}`;
   tableEl3.innerText=`${toppingsEl}-${toppings.ham}`
   tableEl4.innerText=`${crustEl}-${crusts.crispy}`
-  tableEl5.innerText="ksh1300"
+  tableEl5.innerText=crusts.crispy+toppings.ham+sizes.small;
 }else if(crustEl=="crispy"&&sizeEl=="medium"&&toppingsEl=="ham"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.ham}`
 tableEl4.innerText=`${crustEl}-${crusts.crispy}`
-tableEl5.innerText="ksh1400"
+tableEl5.innerText=crusts.crispy+toppings.ham+sizes.medium;
 }else if(crustEl=="crispy"&&sizeEl=="large"&&toppingsEl=="ham"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.large}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.ham}`
 tableEl4.innerText=`${crustEl}-${crusts.crispy}`
-tableEl5.innerText="ksh1500"
+tableEl5.innerText=crusts.crispy+toppings.ham+sizes.large;
 }else if(crustEl=="glutenFree"&&sizeEl=="small"&&toppingsEl=="ham"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.small}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.ham}`
 tableEl4.innerText=`${crustEl}-${crusts.glutenfree}`
-tableEl5.innerText="ksh1250"
+tableEl5.innerText=crusts.glutenfree+toppings.ham+sizes.small;
 }else if(crustEl=="glutenFree"&&sizeEl=="medium"&&toppingsEl=="ham"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.medium}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.ham}`
 tableEl4.innerText=`${crustEl}-${crusts.glutenfree}`
-tableEl5.innerText="ksh1350"
+tableEl5.innerText=crusts.glutenfree+toppings.ham+sizes.medium;
 }else if(crustEl=="glutenFree"&&sizeEl=="large"&&toppingsEl=="ham"){
 tableEl.innerText=1;
 tableEl2.innerText=`${sizeEl}-${sizes.large}`;
 tableEl3.innerText=`${toppingsEl}-${toppings.ham}`
 tableEl4.innerText=`${crustEl}-${crusts.glutenfree}`
-tableEl5.innerText="ksh1450"
+tableEl5.innerText=crusts.glutenfree+toppings.ham+sizes.large;
 }
 }
