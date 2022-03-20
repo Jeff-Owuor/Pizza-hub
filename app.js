@@ -262,8 +262,208 @@ prep=container.classList.add("tabulate");
 return prep;
 }
 buttonElement.addEventListener("click",function(){
-    let common=container.createElement("tr");
-    console.log(common);
-    // count+=1;
-    // generateOutput();
+    addOutput();
 })
+function addOutput(){
+    count+=1
+    let row=container.insertRow();
+    let first=row.insertCell(0);
+    let second=row.insertCell(1);
+    let third=row.insertCell(2);
+    let fourth=row.insertCell(3);
+    let fifth=row.insertCell(4);
+    let crustEl=crust.value;
+    let toppingsEl=counterpart.value;
+    let sizeEl=size.value;
+    if(crustEl==="stuffed"&&sizeEl==="small"&&toppingsEl==="mushroom"){
+           first.innerText=count;
+          second.innerText=`${sizeEl}-${sizes.small}`;
+          third.innerText=`${toppingsEl}-${toppings.mushroom}`
+          fourth.innerText=`${crustEl}-${crusts.stuffed}`
+          fifth.innerText=crusts.stuffed+toppings.mushroom+sizes.small;
+          prep=container.classList.add("tabulate");
+    }else if(crustEl==="stuffed" && sizeEl==="medium" && toppingsEl==="mushroom"){
+        first.innerText=count;
+        second.innerText=`${sizeEl}-${sizes.medium}`;
+        third.innerText=`${toppingsEl}-${toppings.mushroom}`
+        fourth.innerText=`${crustEl}-${crusts.stuffed}`
+        fifth.innerText=crusts.stuffed+toppings.mushroom+sizes.medium;
+        prep=container.classList.add("tabulate");
+    }else if(crustEl==="stuffed" && sizeEl==="large" && toppingsEl==="mushroom"){
+        first.innerText=count;
+        second.innerText=`${sizeEl}-${sizes.medium}`;
+        third.innerText=`${toppingsEl}-${toppings.mushroom}`
+        fourth.innerText=`${crustEl}-${crusts.stuffed}`
+        fifth.innerText=crusts.stuffed+toppings.mushroom+sizes.large; 
+        prep=container.classList.add("tabulate");
+    }else if(crustEl==="crispy" && sizeEl==="small" && toppingsEl==="mushroom"){
+        first.innerText=count;
+        second.innerText=`${sizeEl}-${sizes.small}`;
+        third.innerText=`${toppingsEl}-${toppings.mushroom}`
+        fourth.innerText=`${crustEl}-${crusts.crispy}`
+        fifth.innerText=crusts.crispy+toppings.mushroom+sizes.small;
+        prep=container.classList.add("tabulate");
+  }else if(crustEl==="crispy" && sizeEl==="medium" && toppingsEl==="mushroom"){
+    first.innerText=count;
+    second.innerText=`${sizeEl}-${sizes.medium}`;
+    third.innerText=`${toppingsEl}-${toppings.mushroom}`
+    fourth.innerText=`${crustEl}-${crusts.crispy}`
+    fifth.innerText=crusts.crispy+toppings.mushroom+sizes.medium;
+    prep=container.classList.add("tabulate");
+}else if(crustEl==="crispy" && sizeEl==="large" && toppingsEl==="mushroom"){
+    first.innerText=count;
+    second.innerText=`${sizeEl}-${sizes.large}`;
+    third.innerText=`${toppingsEl}-${toppings.mushroom}`
+    fourth.innerText=`${crustEl}-${crusts.crispy}`
+    fifth.innerText=crusts.crispy+toppings.mushroom+sizes.large;
+    prep=container.classList.add("tabulate");
+}else if(crustEl==="glutenFree" && sizeEl==="small" && toppingsEl==="mushroom"){
+    first.innerText=count;
+    second.innerText=`${sizeEl}-${sizes.small}`;
+    third.innerText=`${toppingsEl}-${toppings.mushroom}`
+    fourth.innerText=`${crustEl}-${crusts.glutenfree}`
+    fifth.innerText=crusts.glutenfree+toppings.mushroom+sizes.small;
+    prep=container.classList.add("tabulate");
+}else if(crustEl==="glutenFree" && sizeEl==="medium" && toppingsEl==="mushroom"){
+    first.innerText=count;
+    second.innerText=`${sizeEl}-${sizes.medium}`;
+    third.innerText=`${toppingsEl}-${toppings.mushroom}`
+    fourth.innerText=`${crustEl}-${crusts.glutenfree}`
+    fifth.innerText=crusts.glutenfree+toppings.mushroom+sizes.medium;
+    prep=container.classList.add("tabulate");
+}else if(crustEl==="glutenFree" && sizeEl==="large" && toppingsEl==="mushroom"){
+    first.innerText=count;
+    second.innerText=`${sizeEl}-${sizes.large}`;
+    third.innerText=`${toppingsEl}-${toppings.mushroom}`
+    fourth.innerText=`${crustEl}-${crusts.glutenfree}`
+    fifth.innerText=crusts.glutenfree+toppings.mushroom+sizes.large;
+    prep=container.classList.add("tabulate");
+}else if(crustEl=="stuffed"&&sizeEl=="small"&&toppingsEl=="bacon"){
+    first.innerText=count;
+    second.innerText=`${sizeEl}-${sizes.small}`;
+    third.innerText=`${toppingsEl}-${toppings.bacon}`
+    fourth.innerText=`${crustEl}-${crusts.stuffed}`
+    fifth.innerText=crusts.stuffed+toppings.bacon+sizes.small;
+    prep=container.classList.add("tabulate");
+}else if(crustEl=="stuffed"&&sizeEl=="medium"&&toppingsEl=="bacon"){
+  first.innerText=count;
+  second.innerText=`${sizeEl}-${sizes.medium}`;
+  third.innerText=`${toppingsEl}-${toppings.bacon}`
+  fourth.innerText=`${crustEl}-${crusts.stuffed}`
+  fifth.innerText=crusts.stuffed+toppings.bacon+sizes.medium;
+  prep=container.classList.add("tabulate");
+}else if(crustEl=="stuffed"&&sizeEl=="large"&&toppingsEl=="bacon"){
+  first.innerText=count;
+  second.innerText=`${sizeEl}-${sizes.medium}`;
+  third.innerText=`${toppingsEl}-${toppings.bacon}`
+  fourth.innerText=`${crustEl}-${crusts.stuffed}`
+  fifth.innerText=crusts.stuffed+toppings.bacon+sizes.large;
+  prep=container.classList.add("tabulate");
+}else if(crustEl=="crispy"&&sizeEl=="small"&&toppingsEl=="bacon"){
+  first.innerText=count;
+  second.innerText=`${sizeEl}-${sizes.small}`;
+  third.innerText=`${toppingsEl}-${toppings.bacon}`
+  fourth.innerText=`${crustEl}-${crusts.crispy}`
+  fifth.innerText=crusts.crispy+toppings.bacon+sizes.small;
+  prep=container.classList.add("tabulate");
+}else if(crustEl=="crispy"&&sizeEl=="medium"&&toppingsEl=="bacon"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.medium}`;
+third.innerText=`${toppingsEl}-${toppings.bacon}`
+fourth.innerText=`${crustEl}-${crusts.crispy}`
+fifth.innerText=crusts.crispy+toppings.bacon+sizes.medium;
+prep=container.classList.add("tabulate");
+}else if(crustEl=="crispy"&&sizeEl=="large"&&toppingsEl=="bacon"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.large}`;
+third.innerText=`${toppingsEl}-${toppings.bacon}`
+fourth.innerText=`${crustEl}-${crusts.crispy}`
+five.innerText=crusts.crispy+toppings.bacon+sizes.large;
+prep=container.classList.add("tabulate");
+}else if(crustEl=="glutenFree"&&sizeEl=="small"&&toppingsEl=="bacon"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.small}`;
+third.innerText=`${toppingsEl}-${toppings.bacon}`
+fourth.innerText=`${crustEl}-${crusts.glutenfree}`
+fifth.innerText=crusts.glutenfree+toppings.bacon+sizes.small;
+prep=container.classList.add("tabulate");
+}else if(crustEl=="glutenFree"&&sizeEl=="medium"&&toppingsEl=="bacon"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.medium}`;
+third.innerText=`${toppingsEl}-${toppings.bacon}`
+fourth.innerText=`${crustEl}-${crusts.glutenfree}`
+fifth.innerText=crusts.glutenfree+toppings.bacon+sizes.medium;
+prep=container.classList.add("tabulate");
+}else if(crustEl=="glutenFree"&&sizeEl=="large"&&toppingsEl=="bacon"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.large}`;
+third.innerText=`${toppingsEl}-${toppings.bacon}`
+fourth.innerText=`${crustEl}-${crusts.glutenfree}`
+fifth.innerText=crusts.glutenfree+toppings.bacon+sizes.large;
+prep=container.classList.add("tabulate");
+}else if(crustEl=="stuffed"&&sizeEl=="small"&&toppingsEl=="ham"){
+    first.innerText=count;
+    second.innerText=`${sizeEl}-${sizes.small}`;
+    third.innerText=`${toppingsEl}-${toppings.ham}`
+    fourth.innerText=`${crustEl}-${crusts.stuffed}`
+    fifth.innerText=crusts.stuffed+toppings.ham+sizes.small;
+    prep=container.classList.add("tabulate");
+}else if(crustEl=="stuffed"&&sizeEl=="medium"&&toppingsEl=="ham"){
+  first.innerText=count;
+  second.innerText=`${sizeEl}-${sizes.medium}`;
+  third.innerText=`${toppingsEl}-${toppings.ham}`
+  fourth.innerText=`${crustEl}-${crusts.stuffed}`
+  fifth.innerText=crusts.stuffed+toppings.ham+sizes.medium;
+  prep=container.classList.add("tabulate");
+}else if(crustEl=="stuffed"&&sizeEl=="large"&&toppingsEl=="ham"){
+  first.innerText=count;
+  second.innerText=`${sizeEl}-${sizes.medium}`;
+  third.innerText=`${toppingsEl}-${toppings.ham}`
+  fourth.innerText=`${crustEl}-${crusts.stuffed}`
+  fifth.innerText=crusts.stuffed+toppings.ham+sizes.large;
+  prep=container.classList.add("tabulate");
+}else if(crustEl=="crispy"&&sizeEl=="small"&&toppingsEl=="ham"){
+  first.innerText=count;
+  second.innerText=`${sizeEl}-${sizes.small}`;
+  third.innerText=`${toppingsEl}-${toppings.ham}`
+  fourth.innerText=`${crustEl}-${crusts.crispy}`
+  fifth.innerText=crusts.crispy+toppings.ham+sizes.small;
+  prep=container.classList.add("tabulate");
+}else if(crustEl=="crispy"&&sizeEl=="medium"&&toppingsEl=="ham"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.medium}`;
+third.innerText=`${toppingsEl}-${toppings.ham}`
+fourth.innerText=`${crustEl}-${crusts.crispy}`
+fifth.innerText=crusts.crispy+toppings.ham+sizes.medium;
+prep=container.classList.add("tabulate");
+}else if(crustEl=="crispy"&&sizeEl=="large"&&toppingsEl=="ham"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.large}`;
+third.innerText=`${toppingsEl}-${toppings.ham}`
+fourth.innerText=`${crustEl}-${crusts.crispy}`
+fifth.innerText=crusts.crispy+toppings.ham+sizes.large;
+prep=container.classList.add("tabulate");
+}else if(crustEl=="glutenFree"&&sizeEl=="small"&&toppingsEl=="ham"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.small}`;
+third.innerText=`${toppingsEl}-${toppings.ham}`
+fourth.innerText=`${crustEl}-${crusts.glutenfree}`
+fifth.innerText=crusts.glutenfree+toppings.ham+sizes.small;
+prep=container.classList.add("tabulate");
+}else if(crustEl=="glutenFree"&&sizeEl=="medium"&&toppingsEl=="ham"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.medium}`;
+third.innerText=`${toppingsEl}-${toppings.ham}`
+fourth.innerText=`${crustEl}-${crusts.glutenfree}`
+fifth.innerText=crusts.glutenfree+toppings.ham+sizes.medium;
+prep=container.classList.add("tabulate");
+}else if(crustEl=="glutenFree"&&sizeEl=="large"&&toppingsEl=="ham"){
+first.innerText=count;
+second.innerText=`${sizeEl}-${sizes.large}`;
+third.innerText=`${toppingsEl}-${toppings.ham}`
+fourth.innerText=`${crustEl}-${crusts.glutenfree}`
+fifth.innerText=crusts.glutenfree+toppings.ham+sizes.large;
+prep=container.classList.add("tabulate");
+}
+return prep;
+}
